@@ -8,12 +8,8 @@ $(btn).click(function () {
         type: 'get',
         url: link,
         dataType: 'json',
-        success: function () {
-            alert('success')
-            console.log(pokemonName)
-        },
         error: function () {
-            alert('not working')
+            alert('please enter correct pokemon name')
         }
     }).done(function (data) {
         var pokemonData = data
